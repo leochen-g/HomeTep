@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backgroud_login"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"> 
+<RelativeLayout 
+        android:id="@+id/login_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bar">
+        <Button
+            android:id="@+id/explain_reback_btn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="返回"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:onClick="explain_back"
+            android:background="@drawable/title_btn_back"/>  
+	</RelativeLayout>  
+	<LinearLayout 
+	           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+	    
+	    >
+	     <TextView 
+ 			android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="6dp"
+            android:text="      本系统为基于android的蓝牙体温检测系统，由android手机应用，单片机，温度传感器，蓝牙模块等构成。能实时对人体温度进行监测，显示监测时间内的最高温度最低温度当时温度，并通过图表进行显示。"
+            android:textSize="18sp"
+            android:textColor="@color/sred"        />
+	    
+	</LinearLayout>
+   
+
+</LinearLayout> 

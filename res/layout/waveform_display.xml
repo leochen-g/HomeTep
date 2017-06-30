@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backgroud_login"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal">
+    <RelativeLayout 
+        android:id="@+id/waveform_display_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bar">
+        <Button
+            android:id="@+id/waveform_display_btn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="返回"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:onClick="waveform_display_back"
+            android:background="@drawable/title_btn_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="显示波形"
+           />      
+    </RelativeLayout>
+    <LinearLayout 
+    	android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:layout_marginTop="45sp"
+   		android:gravity="center"
+        android:orientation="vertical">"    
+ 
+        >
+     
+        <SurfaceView 
+	  android:id="@+id/show" 
+   	  android:gravity="center"	  
+	  android:layout_width="wrap_content" 
+	  android:layout_height="wrap_content" 
+	  />      
+    </LinearLayout>
+</RelativeLayout>

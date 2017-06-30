@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud_login"
+    android:orientation="vertical" >
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/high_temp"
+    
+    >
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="最高温度:"
+        android:textColor="@color/white" />
+
+<TextView
+    android:layout_width="55dp"
+    android:layout_height="wrap_content" />
+        
+<TextView 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:textSize="27sp" 
+    android:textColor="@color/black"
+    android:id="@+id/et3"
+    />
+    
+<TextView 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:textSize="27sp" 
+    android:textColor="@color/black"
+    android:id="@+id/et5"
+    />
+</LinearLayout>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/low_temp"
+    >
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="最低温度:"
+        android:textColor="@color/white" />
+
+<TextView
+    android:layout_width="55dp"
+    android:layout_height="wrap_content" />
+        
+<TextView 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:textSize="27sp" 
+    android:textColor="@color/black"
+    android:id="@+id/et4"
+    />
+    
+<TextView 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:textSize="27sp" 
+    android:textColor="@color/black"
+    android:id="@+id/et6"
+    />
+</LinearLayout>
+
+<LinearLayout 
+    	android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:layout_marginTop="0sp"
+   		android:gravity="center"
+        android:orientation="vertical">    
+        <SurfaceView 
+      
+	  android:id="@+id/show1" 
+   	  android:gravity="center"	  
+	  android:layout_width="fill_parent" 
+	  android:layout_height="wrap_content" 
+	  />      
+    </LinearLayout>
+
+   <LinearLayout
+    
+     android:orientation="horizontal"
+     android:layout_width="fill_parent" 
+     android:layout_height="wrap_content"
+     android:layout_gravity="center_horizontal"
+     android:layout_marginTop="10dip">
+	
+
+	<Button
+	        android:id="@+id/bt2"
+	        android:layout_width="85dp"
+	        android:layout_height="50dp"
+	        android:layout_marginLeft="2.5dp"
+	        android:layout_alignParentRight="true"
+	        android:text="我的体温"
+	        android:background="@drawable/btn_style_green"
+	        android:textColor="#ffffff"
+	        android:textSize="16sp"
+	        />
+	<Button
+	        android:id="@+id/bt3"
+	        android:layout_width="85dp"
+	        android:layout_height="50dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_alignParentRight="true"
+	        android:text="清除体温"
+	        android:background="@drawable/btn_style_green"
+	        android:textColor="#ffffff"
+	        android:textSize="16sp"
+	        android:onClick="login_mainweixin"
+	        />
+	<Button
+	        android:id="@+id/bt1"
+	        android:layout_width="85dp"
+	        android:layout_height="50dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_alignParentRight="true"
+	        android:text="体温明细"
+	        android:background="@drawable/btn_style_green"
+	        android:textColor="#ffffff"
+	        android:textSize="16sp"
+	        android:onClick="data_recording"
+	        />
+	<Button
+	        android:id="@+id/bt4"
+	        android:layout_width="85dp"
+	        android:layout_height="50dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_alignParentRight="true"
+	        android:text="体温波形"
+	        android:background="@drawable/btn_style_green"
+	        android:textColor="#ffffff"
+	        android:textSize="16sp"
+	        android:onClick="waveform_display"
+	        />
+
+	</LinearLayout>
+	<Button
+	       android:id="@+id/but_connect"
+	       android:layout_width="fill_parent"
+		   android:layout_height="50dp"
+		   android:layout_marginLeft="2.5dp"
+		   android:layout_marginRight="2.5dp"
+		   android:layout_marginTop="5dip"
+	       android:layout_alignParentRight="true"
+	       android:text="连接设备" 
+	       android:background="@drawable/btn_style_green"
+	       android:textColor="#ffffff"
+		   android:textSize="18sp"
+		   android:onClick="device_list"
+	       />
+</LinearLayout>

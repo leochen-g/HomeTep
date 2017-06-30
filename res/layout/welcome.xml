@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/linearLayout1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@drawable/backgroud_login"
+     android:gravity="center_vertical"
+     android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:gravity="center" >
+            
+            <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon"
+            android:layout_marginRight="10dp"
+             />
+            
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="欢迎使用\n合肥师范学院体温检测系统"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+            
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+             <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/scu3"
+             />
+            
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/main_login_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_style_green"
+            android:gravity="right"
+            android:onClick="welcome_login"
+            android:paddingLeft="130dp"
+            android:paddingRight="130dp"
+            android:text="登录系统"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+        <Button
+            android:id="@+id/main_login_back_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_style_green"
+            android:gravity="right"
+            android:onClick="welcome_back"
+            android:paddingLeft="130dp"
+            android:paddingRight="130dp"
+            android:text="退出登录"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="right" >
+            >
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="密码账号均在输入框显示"
+            android:textSize="14sp"
+            android:textColor="@color/black" 
+            />
+            
+            <Button
+	        android:id="@+id/welcome_explain_btn"
+	        android:layout_width="90dp"
+	        android:layout_height="40dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_alignParentRight="true"
+	        android:text="关于"
+	        android:background="@drawable/btn_style_green"
+	        android:textColor="#ffffff"
+	        android:textSize="18sp"
+	        android:onClick="welcome_explain"
+	        />
+            
+            
+        </LinearLayout>
+ 
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:text="Copyright ©张安雨"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:layout_alignParentBottom="true" />
+    </LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  BluetoothChat -->
+    <string name="send">发送</string>
+    <string name="not_connected">还没有连接到设备</string>
+    <string name="bt_not_enabled_leaving">蓝牙功能没有启动. 功能受限制.</string>
+    <string name="title_connecting">连接中</string>
+    <string name="title_connected_to">已连接 </string>
+    <string name="title_not_connected">没有连接</string>
+    
+    <string name="hello">基于Android系统的在线控制技术的设计演示</string>
+    <string name="app_name">体温检测</string>
+    <string name="button01">加热</string>				<!-- 声明名为on的字符串资源 -->
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">搜索蓝牙设备</string>
+    <string name="select_device">选择一个蓝牙设备连接</string>
+    <string name="none_paired">没有配对的设备</string>
+    <string name="none_found">没有找到设备</string>
+    <string name="title_paired_devices">设备配对</string>
+    <string name="title_other_devices">其他可以连接的设备</string>
+    <string name="button_scan">搜索设备</string>
+
+    <!-- Options Menu -->
+    <string name="connect">连接一个设备</string>
+    <string name="discoverable">设备可见</string>
+</resources>
